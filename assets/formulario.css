@@ -1,0 +1,79 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 400px;
+    height: 344px;
+    justify-content: space-around;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-left: 14.09;
+    border-right-width: 1px;
+    border-top-width: 1px; 
+    padding-right: 14.09px;
+    padding-top: 20px;
+    padding-bottom: 20px; !important
+    
+
+}
+
+     input {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .tipotransacao {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .adicionar{
+        width: 100%;
+        background: #333333;
+        border-radius: 4px;
+        color: white;
+    }
+
+    select {
+        width: 100%;
+        height: 32px;
+        border: 1px solid #979797;
+        box-sizing: border-box;
+        border-radius: 4px;
+    }
+
+    .campo{
+        width: 100%;
+        padding-bottom: 6px;
+
+    }
+
+    .campo1 , .campo2{
+        width: 100%;
+    }
+    
+    .formulario{
+        padding-bottom: 20px;
+    }
+    
+    @media screen and (max-width: 768px)  {
+        .formulario{
+            flex-direction: row;
+            height: 189px;
+            flex-basis: 0;
+        }
+
+        .adicionar .campo3{
+            width: 33%;
+            margin-top: 10px;
+        }
+   
+    }
+      

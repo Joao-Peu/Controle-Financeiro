@@ -1,0 +1,393 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+  
+#hiden{
+    display: none;
+}
+
+body {
+    font-family: 'Lato', 'sans-sefif';
+
+}
+
+.header {
+    background: rgb(224, 224, 224);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    flex-wrap: nowrap;
+
+}
+
+.img-menu, .menu {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.controlefinanceiro {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu-hamburguer {
+    display: none;
+}
+
+.liner {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    background: white;
+    text-align: center;
+    height: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.extratodetransacoes {
+    flex-basis: 680px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.valor {
+    text-align: right;
+    border-bottom: 1px solid;
+    width: 20px;
+    border-collapse: collapse;
+    text-align: end;
+}
+
+.spacing{
+    text-align: right;
+    border-bottom: 1px solid;
+    width: 20px;
+    border-collapse: collapse;
+    text-align: end
+}
+
+.valor-total, .table-total {
+    text-align: right;
+}
+
+.mercadoria {
+    text-align: left;
+
+}
+
+.digito {
+    text-align: center;
+}
+
+.info-extrato {
+    border-bottom:1px solid;"
+    width: fill-available;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    padding-bottom: 8px;
+    flex-basis: 680px !important;
+    flex-grow: 1;
+
+}
+
+.digito, .mercadoria, .valor{
+    border-bottom:1px solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.valor{
+    padding-left:60px;
+}
+
+.mercadoria{
+    padding: left 30px;
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    gap: 20px;
+    margin: 20px;
+}
+
+.divisor {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.fechar {
+    display: none;
+}
+
+.extrato-resultado{
+    border-bottom-style: hidden;
+    border-top: double;
+
+}
+
+.res{
+    border-bottom:1px solid;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.campo2, .campo3{
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .corpo {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .liner {
+        display: none;
+    }
+
+    .formulario {
+        flex-direction: row;
+        height: 189px;
+        width: 95%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        flex-basis: 0;
+        justify-content: flex-end;
+    }
+
+    .nova-transacao {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu {
+        text-align: justify;
+        position: fixed;
+        justify-content: start;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-left-width: 0px;
+        margin-left: 0px;
+        width: 240px;
+
+
+    }
+
+    .campo {
+        padding-bottom: 10px;
+        height: fit-content;
+    }
+
+    .campo1 {
+        width: 30%;
+        height: fit-content;
+        
+    }
+
+    .campo2 {
+        width: 40%;
+        height: fit-content;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+
+    .adicionar .campo3 {
+        width: 33%;
+        margin-top: 10px
+    }
+
+    .cadastro {
+        padding-top: 11px;
+    }
+
+    .fechar {
+        display: block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .cadastro, .limpar {
+        padding-left: 12px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        width: 100%;
+        background-color: #333;
+        transition: All 1s ease;
+        -webkit-transition: All 1s ease;
+        -moz-transition: All 1s ease;
+        -o-transition: All 1s ease;
+
+    }
+
+    .fechar {
+        margin: 20px;
+        padding-right: 82%;
+        ;
+    }
+
+    .divisor {
+        display: none;
+    }
+
+    .limpar:hover {
+        background-color: #C4C4C4;
+        color: black;
+    }
+
+
+    .cadastro:hover {
+        background-color: #C4C4C4;
+        color: black;
+    }
+
+    .info-extrato {
+        width: 100% !important;
+        flex-basis: 669px;
+    }
+
+    .hiden {
+        display: none;
+    }
+
+    @media screen and (max-width: 411px) {
+        .corpo {
+            display: flex;
+            gap: 30px;
+            padding-top: 0px;
+        }
+
+        .formulario {
+            flex-direction: column;
+            padding-top: 0;
+            padding-bottom: 0;
+            border: none;
+            justify-content: space-evenly;
+            flex-basis: 400px;
+        }
+
+        .nova-transacao {
+            display: none;
+        }
+
+        .menu-hamburguer {
+            display: block;
+        }
+
+        .menu {
+            position: fixed;
+            justify-content: start;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            padding-left: 0px;
+            padding-right: 0px;
+            border-left-width: 0px;
+            margin-left: 0px;
+            width: 240px;
+            text-align: justify;
+        }
+
+        .campo1, .campo2 .adicionar {
+            width: 100%;
+        }
+
+        .campo2 {
+            width: 100%;
+            height: fit-content;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+
+        .adicionar {
+            width: 100%;
+        }
+
+        .cadastro {
+            padding-top: 11px;
+        }
+
+        .cadastro, .limpar {
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-left: 12px;
+            ;
+            width: 100%;
+            background-color: #333;
+            transition: All 1s ease;
+            -webkit-transition: All 1s ease;
+            -moz-transition: All 1s ease;
+            -o-transition: All 1s ease;
+
+        }
+
+        .fechar {
+            display: block;
+            margin: 20px;
+            padding-top: 12px;
+            padding-right: 82%;
+            padding-bottom: 12px;
+
+        }
+
+        .divisor {
+            display: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .menu-responsivo {
+            position: fixed;
+            top: 0;
+            right: 0;
+            flex-direction: column;
+            height: 100%;
+
+            background-color: #333;
+            color: white;
+        }
